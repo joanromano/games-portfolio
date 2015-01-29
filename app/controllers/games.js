@@ -5,5 +5,15 @@ export default Ember.ArrayController.extend({
 
   content: function() {
     return this.get('store').find('game');
-  }.property()
+  }.property(),
+
+  actions: {
+    addToFavorites: function(game) {
+      game.set('isFavorite', true);
+    },
+
+    removeFavorite: function(game) {
+      game.set('isFavorite', false);
+    }
+  }
 });

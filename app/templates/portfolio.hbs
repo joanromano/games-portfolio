@@ -1,9 +1,21 @@
 <h2>Portfolio</h2>
 
+<h3>Favorite games ({{favoriteGames.length}})</h3>
+
+<ul>
+  {{#each game in favoriteGames}}
+    <li>{{game.name}} <button {{action "removeFavorite" game}}>Remove favorite</button></li>
+  {{/each}}
+</ul>
+
+
 <h3>All games ({{games.length}})</h3>
 
 <ul>
   {{#each game in games}}
-    <li>{{game.name}}</li>
+    {{#link-to "game" game.id tagName="li"}}
+      {{game.name}} <button {{bind-attr disabled="game.isFavorite"}} {{action "addToFavorites" game}}>Favorite</button>
+    {{/link-to}}
   {{/each}}
 </ul>
+
