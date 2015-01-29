@@ -4,6 +4,6 @@ export default Ember.ArrayController.extend({
   itemController: 'game',
 
   content: function() {
-    return this.get('store').all('game');
+    return this.get('store').find('game');
   }.property()
 });
