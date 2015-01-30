@@ -13,10 +13,14 @@
     text-align: center;
     height: 100px;
     background-size: cover;
-
-    a{
-      color: white;
-      text-decoration: none;
-    }
+    margin-top: 0;
+    padding-top: 40px;
   }
+
+  a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+  }
+
 }

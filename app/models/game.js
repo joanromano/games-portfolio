@@ -10,9 +10,16 @@ export default DS.Model.extend({
   isFavorite: false,
 
   screenshot: function() {
-    var shortName = this.get('short');
-    if (!shortName) {return;}
+    return "http://i1.midasplayer.com/images/games/" + this.get('short') + "/dumps/screen_" + this.get('short') + ".gif";
+  }.property('short'),
 
-    return "http://i1.midasplayer.com/images/games/" + shortName + "/dumps/screen_" + shortName + ".gif";
+  icons: function() {
+    var src = "http://i1.midasplayer.com/images/games/" + this.get('short') + "/" + this.get('short');
+
+    return {
+      small: src + "_60x60.gif",
+      medium: src + "_81x46.gif",
+      large: src + "_170x80.gif"
+    };;
   }.property('short')
 });
