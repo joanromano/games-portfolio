@@ -1,6 +1,6 @@
 .game-card-component{
   display: inline-block;
-  width: 300px;
+  width: 260px;
   margin-right: 20px;
   margin-bottom: 20px;
   background: #f7f7f7;
@@ -11,5 +11,12 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    height: 100px;
+    background-size: cover;
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
   }
 }
