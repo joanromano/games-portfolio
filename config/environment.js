@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'games-portfolio',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'auto', //TODO: Use 'none' when generate the index.html and remove <base href="/" /> from the dist/index.html
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

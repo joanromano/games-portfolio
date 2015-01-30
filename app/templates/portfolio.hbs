@@ -11,14 +11,15 @@
 
 <h3>All games ({{games.length}})</h3>
 
-<ul>
+<div class="all-games">
   {{#each game in games}}
-    <li>
+    <div class="game-card-component">
       {{#link-to "game" game.id}}
-        {{game.name}}
+        <div>
+          <h3 style="background-image: url({{unbound game.screenshot}});">{{game.name}}</h3>
+        </div>
       {{/link-to}}
       <button {{bind-attr disabled="game.isFavorite"}} {{action "addToFavorites" game}}>Favorite</button>
-    </li>
+    </div>
   {{/each}}
-</ul>
-
+</div>

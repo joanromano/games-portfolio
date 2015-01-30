@@ -1,0 +1,15 @@
+.game-card-component{
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+
+  h3{
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+  }
+}
