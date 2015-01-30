@@ -13,9 +13,12 @@
 
 <ul>
   {{#each game in games}}
-    {{#link-to "game" game.id tagName="li"}}
-      {{game.name}} <button {{bind-attr disabled="game.isFavorite"}} {{action "addToFavorites" game}}>Favorite</button>
-    {{/link-to}}
+    <li>
+      {{#link-to "game" game.id}}
+        {{game.name}}
+      {{/link-to}}
+      <button {{bind-attr disabled="game.isFavorite"}} {{action "addToFavorites" game}}>Favorite</button>
+    </li>
   {{/each}}
 </ul>
 
