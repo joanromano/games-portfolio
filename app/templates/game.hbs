@@ -6,10 +6,9 @@
     {{name}}
   </span>
 </h2>
+<button {{action "historyBack"}}>Back</button>
 {{#if isFavorite}}
   <button class="toggle-fav" {{action "toggleFavorite"}}>Remove from favorites</button>
 {{else}}
   <button class="toggle-fav" {{action "toggleFavorite"}}>Add to favorites</button>
 {{/if}}
-
-<button {{action "historyBack"}}>Back</button>
