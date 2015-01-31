@@ -21,7 +21,7 @@
     span{
       background-color: $header-bg;
       padding: 0.5rem;
-      border-radius: 0 0 3px 3px;
+      border-radius: 0 0 $main-border-radius $main-border-radius;
       border: 1px solid $header-border;
       border-top-color: transparent;
       box-shadow: 2px 6px 7px -2px black;

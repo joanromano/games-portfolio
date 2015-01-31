@@ -1,5 +1,8 @@
 //Sizes
-$header-height: 75px;
+$base-rem: 16px;
+$header-height: px-to-rem(75px);
+$main-font-size: 0.8rem !default; // ~ 13pt
+$main-border-radius: 3px;
 
 //Colors
 $header-bg: #f5f5f5;

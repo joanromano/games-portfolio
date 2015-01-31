@@ -2,12 +2,12 @@
   $margin: 10px;
 
   display: none;
-  width: 170px;
+  width: px-to-rem(170px);
   margin-right: $margin;
   margin-bottom: $margin;
   background: #f7f7f7;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: $main-border-radius;
 
   &.is-visible{
     display: inline-block;
@@ -18,10 +18,10 @@
     transition: background 0.2s;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80px;
+    height: px-to-rem(80px);
     margin-top: 0;
-    padding-top: 30px;
-    border-radius: 3px 3px 0 0;
+    padding-top: px-to-rem(30px);
+    border-radius: $main-border-radius $main-border-radius 0 0;
     background-size: 100%;
 
     &:hover{

@@ -1,11 +1,12 @@
 @import "bower_components/font-awesome/scss/font-awesome";
+@import "functions";
 @import "config";
 @import "mixins";
 @import "components";
 @import "sections";
 
-html, body {
-
+body {
+  font-size: $main-font-size;
 }
 *{
   box-sizing: border-box;
