@@ -3,7 +3,9 @@ import Ember from "ember";
 export default Ember.ArrayController.extend({
   itemController: 'game',
 
-  content: function() {
+  favorites: Ember.computed.filterBy('@this', 'isFavorite'),
+
+  model: function() {
     return this.get('store').all('game');
   }.property(),
 

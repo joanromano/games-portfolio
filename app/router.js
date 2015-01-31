@@ -6,7 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('portfolio');
+  this.route('all');
+  this.route('favorites');
   this.route('game', {path: 'games/:game_id'});
 });
 

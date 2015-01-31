@@ -1,0 +1,12 @@
+{{input value=filterText placeholder="game name..."}}
+
+<div class="all-games">
+  {{#each game in visibleGames}}
+    <div class="game-card-component">
+      {{#link-to "game" game.id}}
+        <h3 style="background-image: url({{unbound game.icons.large}});">{{game.name}}</h3>
+      {{/link-to}}
+      <button {{bind-attr disabled="game.isFavorite"}} {{action "addToFavorites" game}}>Favorite</button>
+    </div>
+  {{/each}}
+</div>
