@@ -8,7 +8,8 @@ Sort ascending
 <div class="all-games">
   {{#each game in sortedGames}}
     {{game-card content=game}}
-  {{else}}
-    NO RESULTS
   {{/each}}
+  {{#unless visibleGames}}
+    NO RESULTS
+  {{/unless}}
 </div>

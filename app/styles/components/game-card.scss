@@ -36,6 +36,12 @@
     margin: 0.4rem;
   }
 
+  .matched-text{
+    color: $main-green;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+  }
+
   a{
     text-decoration: none;
   }
