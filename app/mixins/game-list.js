@@ -6,7 +6,6 @@ export default Ember.Mixin.create({
   hasBoosters: false,
   isSortAscending: true,
 
-  model: Ember.computed.filterBy('controllers.games', 'isFavorite', false),
   sortedGames: Ember.computed.sort('model', 'gamesSorting'),
   visibleGames: Ember.computed.filterBy('sortedGames', 'isVisible', true),
 

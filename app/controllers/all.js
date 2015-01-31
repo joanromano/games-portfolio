@@ -1,17 +1,6 @@
 import Ember from "ember";
+import gameList from "../mixins/game-list";
 
-export default Ember.ObjectController.extend({
-  needs: ['games'],
-  filterText: '',
-  hasBoosters: false,
-  isSortAscending: true,
-
-  model: Ember.computed.filterBy('controllers.games', 'isFavorite', false),
-  sortedGames: Ember.computed.sort('model', 'gamesSorting'),
-  visibleGames: Ember.computed.filterBy('sortedGames', 'isVisible', true),
-
-  gamesSorting: function() {
-    var direcction = this.get('isSortAscending') ? 'asc' : 'desc';
-    return ['name:' + direcction];
-  }.property('isSortAscending')
+export default Ember.ObjectController.extend(gameList, {
+  model: Ember.computed.filterBy('controllers.games', 'isFavorite', false)
 });
