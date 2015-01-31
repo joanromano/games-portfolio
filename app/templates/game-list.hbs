@@ -1,8 +1,12 @@
-Game name {{input value=filterText placeholder="Type something..." autofocus=true}}
-Sort ascending
-<div class="slideThree">
-  {{input type="checkbox" id="slideThree" checked=isSortAscending}}
-  <label for="slideThree"></label>
+<div class="games-filter">
+  <div class="filter search-input">
+    <span class="icon"><i class="fa fa-search"></i></span>
+    {{input value=filterText type="search" id="search" placeholder="Search..."}}
+  </div>
+  <div class="filter slideThree">
+    {{input type="checkbox" id="slideThree" checked=isSortAscending}}
+    <label for="slideThree"></label>
+  </div>
 </div>
 
 <div class="all-games">

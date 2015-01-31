@@ -8,6 +8,7 @@
 
 body {
   font-size: $main-font-size;
+  background-color: $app-bg;
 }
 *{
   box-sizing: border-box;
@@ -50,4 +51,14 @@ body {
 #app-content{
   margin-top: $header-height;
   overflow-x: hidden;
+  color: $app-color;
+}
+
+.games-filter{
+  text-align: center;
+  margin: 1rem;
+
+  .filter{
+    vertical-align: middle;
+  }
 }

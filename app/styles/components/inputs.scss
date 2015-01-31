@@ -1,3 +1,4 @@
+//Slide
 .slideThree {
   $activeColor: #27ae60; //green
   $darkenColor: darken($activeColor, 20%);
@@ -7,7 +8,6 @@
   width: px-to-rem(80px);
   height: px-to-rem(26px);
   background: #333;
-  margin: px-to-rem(20px) auto;
   position: relative;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(black, 0.5), 0px 1px 0px rgba(white, 0.2);
@@ -48,5 +48,46 @@
     &:checked + label {
       left: 43px;
     }
+  }
+}
+
+//Seach
+.search-input{
+  $icon-distance: px-to-rem(8px);
+  $placeholder-color: #65737e;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+
+  input#search{
+    @include transition(all .55s ease);
+    width: px-to-rem(150px);
+    height: px-to-rem(30px);
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: px-to-rem(45px);
+    border-radius: 5px;
+
+    &:focus, &:active{
+      outline: none;
+      background: white;
+    }
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  .icon{
+    position: absolute;
+    top: 0;
+    margin-left: $icon-distance;
+    margin-top: $icon-distance;
+    z-index: 1;
+    color: #4f5b66;
+    left: 0;
+    font-size: 16px;
   }
 }

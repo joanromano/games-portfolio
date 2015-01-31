@@ -31,15 +31,13 @@
 
   .game-title{
     text-align: center;
-    color: white;
-    text-shadow: 1px 1px 3px black;
+    color: $app-bg;
     margin: 0.4rem;
+    font-weight: bold;
   }
 
   .matched-text{
     color: $main-green;
-    text-shadow: 1px 1px black;
-    font-weight: bold;
   }
 
   a{
