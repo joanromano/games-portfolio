@@ -1,9 +1,9 @@
-{{input value=filterText placeholder="game name..."}}
+{{input value=filterText placeholder="game name..." autofocus=true}}
 Sort ascending {{input type="checkbox" name="isAdmin" checked=isSortAscending}}
 
 <div class="all-games">
-  {{#each game in visibleGames}}
-    <div class="game-card-component">
+  {{#each game in sortedGames}}
+    <div {{bind-attr class=":game-card-component game.isVisible"}}>
       {{#link-to "game" game.id}}
         <h3 style="background-image: url({{unbound game.icons.large}});">{{game.name}}</h3>
       {{/link-to}}
