@@ -1,14 +1,13 @@
-{{input value=filterText placeholder="game name..." autofocus=true}}
-Sort ascending {{input type="checkbox" name="isAdmin" checked=isSortAscending}}
+Game name {{input value=filterText placeholder="Type something..." autofocus=true}}
+Sort ascending
+<div class="slideThree">
+  {{input type="checkbox" id="slideThree" checked=isSortAscending}}
+  <label for="slideThree"></label>
+</div>
 
 <div class="all-games">
   {{#each game in sortedGames}}
-    <div {{bind-attr class=":game-card-component game.isVisible"}}>
-      {{#link-to "game" game.id}}
-        <h3 style="background-image: url({{unbound game.icons.large}});">{{game.name}}</h3>
-      {{/link-to}}
-      <i {{bind-attr class=":favorite-icon :fa game.isFavorite:fa-star:fa-star-o"}} {{action "toggleFavorite" game}}></i>
-    </div>
+    {{game-card content=game}}
   {{else}}
     NO RESULTS
   {{/each}}

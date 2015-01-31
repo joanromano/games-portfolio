@@ -1,0 +1,60 @@
+.game-card-component{
+  $margin: 10px;
+
+  display: none;
+  width: 170px;
+  margin-right: $margin;
+  margin-bottom: $margin;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+
+  &.is-visible{
+    display: inline-block;
+    -webkit-animation: fade-in 1s forwards;
+  }
+
+  .game-img{
+    transition: background 0.2s;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    margin-top: 0;
+    padding-top: 30px;
+    border-radius: 3px 3px 0 0;
+    background-size: 100%;
+
+    &:hover{
+      background-size: 110%;
+    }
+  }
+
+  .game-title{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    margin: 0.4rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .favorite-icon{
+    cursor: pointer;
+
+    &:hover{
+      color: #aaa;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@include keyframe('fade-in') {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
