@@ -21,5 +21,9 @@ export default DS.Model.extend({
       medium: src + "_81x46.gif",
       large: src + "_170x80.gif"
     };;
+  }.property('short'),
+
+  image: function() {
+    return "http://i2.midasplayer.com/images/games/" + this.get('short') + "/tournamentPage/" + this.get('short') + "_764x260.jpg";
   }.property('short')
 });

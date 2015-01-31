@@ -13,5 +13,11 @@ export default Ember.ObjectController.extend({
     var filter = filterText.toLowerCase();
 
     return name.indexOf(filter) !== -1;
-  }.property('name', 'favorites.filterText', 'all.filterText')
+  }.property('name', 'favorites.filterText', 'all.filterText'),
+
+  actions: {
+    toggleFavorite: function() {
+      this.toggleProperty('isFavorite');
+    }
+  }
 });

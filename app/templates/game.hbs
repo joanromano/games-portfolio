@@ -1,12 +1,13 @@
-{{name}} --
-{{short}} --
-{{url}} --
-{{tags}} --
-{{hasBoosters}}
-<hr>
-
+<div class="game-image">
+  <img {{bind-attr src=image alt=name}}>
+</div>
+<h2>
+  <span>
+    {{name}}
+  </span>
+</h2>
 {{#if isFavorite}}
-  <button>Remove from favorites</button>
+  <button class="toggle-fav" {{action "toggleFavorite"}}>Remove from favorites</button>
 {{else}}
-  <button>Add to favorites</button>
+  <button class="toggle-fav" {{action "toggleFavorite"}}>Add to favorites</button>
 {{/if}}

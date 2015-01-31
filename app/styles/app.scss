@@ -1,4 +1,5 @@
 @import "bower_components/font-awesome/scss/font-awesome";
+@import "config";
 @import "components";
 @import "sections";
 
@@ -9,12 +10,13 @@ html, body {
   box-sizing: border-box;
 }
 #app-header{
-  background-color: #f5f5f5;
+  height: $header-height;
+  background-color: $header-bg;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $header-border;
   padding: 0 1rem;
   z-index: 9;
 
@@ -35,6 +37,7 @@ html, body {
     }
   }
 }
+
 #app-content{
-  margin-top: 100px;
+  margin-top: $header-height;
 }
