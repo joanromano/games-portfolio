@@ -1,3 +1,4 @@
+@import "bower_components/font-awesome/scss/font-awesome";
 @import "components";
 @import "sections";
 
@@ -13,6 +14,26 @@ html, body {
   width: 100%;
   top: 0;
   left: 0;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 1rem;
+  z-index: 9;
+
+  h1{
+    float: left;
+  }
+  nav{
+    padding-top: 2rem;
+    float: right;
+
+    a{
+      color: #777;
+      text-decoration: none;
+
+      &:hover, &.active{
+        color: #333;
+      }
+    }
+  }
 }
 #app-content{
   margin-top: 100px;

@@ -1,0 +1,15 @@
+{{input value=filterText placeholder="game name..."}}
+Sort ascending {{input type="checkbox" name="isAdmin" checked=isSortAscending}}
+
+<div class="all-games">
+  {{#each game in visibleGames}}
+    <div class="game-card-component">
+      {{#link-to "game" game.id}}
+        <h3 style="background-image: url({{unbound game.icons.large}});">{{game.name}}</h3>
+      {{/link-to}}
+      <i {{bind-attr class=":favorite-icon :fa game.isFavorite:fa-star:fa-star-o"}} {{action "toggleFavorite" game}}></i>
+    </div>
+  {{else}}
+    NO RESULTS
+  {{/each}}
+</div>

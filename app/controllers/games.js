@@ -10,12 +10,8 @@ export default Ember.ArrayController.extend({
   }.property(),
 
   actions: {
-    addToFavorites: function(game) {
-      game.set('isFavorite', true);
-    },
-
-    removeFavorite: function(game) {
-      game.set('isFavorite', false);
+    toggleFavorite: function(game) {
+      game.toggleProperty('isFavorite');
     }
   }
 });

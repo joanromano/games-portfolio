@@ -1,6 +1,6 @@
 import Ember from "ember";
 
-export default Ember.ObjectController.extend({
+export default Ember.Mixin.create({
   needs: ['games'],
   filterText: '',
   hasBoosters: false,
