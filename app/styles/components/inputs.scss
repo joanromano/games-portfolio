@@ -75,13 +75,14 @@
     border: none;
     font-size: 10pt;
     float: left;
-    color: #262626;
+    color: #999;
     padding-left: px-to-rem(45px);
     border-radius: 5px;
 
     &:focus, &:active{
       outline: none;
       background: white;
+      color: #262626;
     }
     &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
       color: $placeholder-color;

@@ -1,6 +1,7 @@
 .game-card-component{
   $margin: 10px;
 
+  position: relative;
   display: none;
   width: px-to-rem(170px);
   margin-right: $margin;
@@ -14,8 +15,19 @@
     @include animation(fade-in 1s forwards);
   }
 
+  .main-loader{
+    z-index: 1;
+    &:after, &:before{
+      background-color: $app-bg;
+    }
+  }
+
   .game-img{
     @include transition(background 0.2s);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: px-to-rem(80px);
@@ -23,6 +35,7 @@
     padding-top: px-to-rem(30px);
     border-radius: $main-border-radius $main-border-radius 0 0;
     background-size: 100%;
+    z-index: 2;
 
     &:hover{
       background-size: 110%;
@@ -42,6 +55,9 @@
 
   a{
     text-decoration: none;
+    display: block;
+    height: 5.1rem;
+    position: relative;
   }
 
   .favorite-icon{
