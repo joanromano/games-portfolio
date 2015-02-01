@@ -28,7 +28,7 @@
       color: $header-color;
     }
 
-    @media screen and (max-width: $header-breakpoint) {
+    @media screen and (max-width: $mobile-breakpoint) {
       display: none;
     }
   }

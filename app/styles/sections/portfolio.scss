@@ -1,4 +1,9 @@
 .all-games{
+  $games-padding: px-to-rem(10px);
   text-align: center;
-  padding-left: px-to-rem(10px);
+  padding-left: $games-padding;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding-right: $games-padding;
+  }
 }

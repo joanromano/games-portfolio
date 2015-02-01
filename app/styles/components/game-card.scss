@@ -79,6 +79,42 @@
       @include transform(scale(1.1));
     }
   }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    &.is-visible{
+      display: block;
+      width: 100%;
+      height: 4.1rem;
+      padding: 0.4rem;
+
+      .main-loader{
+        display: none;
+      }
+      a{
+        float: left;
+      }
+      .game-img{
+        width: 7rem;
+        background-position: top;
+        border-radius: $main-border-radius;
+        height: 3.2rem;
+      }
+      .game-title{
+        float: left;
+        padding-left: 7.5rem;
+        padding-top: 0.8rem;
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+      }
+      .displayed-name{
+        max-width: 11rem;
+      }
+      .favorite-icon{
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 
 @include keyframe('fade-in') {

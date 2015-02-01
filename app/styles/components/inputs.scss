@@ -57,6 +57,11 @@
       left: 43px;
     }
   }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    display: block;
+    margin: 1.6rem auto -0.6rem auto;
+  }
 }
 
 //Seach
