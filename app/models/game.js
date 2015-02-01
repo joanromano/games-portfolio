@@ -20,7 +20,7 @@ export default DS.Model.extend({
       small: src + "_60x60.gif",
       medium: src + "_81x46.gif",
       large: src + "_170x80.gif"
-    };;
+    };
   }.property('short'),
 
   image: function() {

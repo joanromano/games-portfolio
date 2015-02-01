@@ -16,6 +16,7 @@ Visit the last stable version [http://game-portfolio.herokuapp.com](http://game-
 * State of the App it’s preserved between view changes
 * Deployed to a production enviroment --> [http://game-portfolio.herokuapp.com](http://game-portfolio.herokuapp.com)
 * Singleton routes (HTML5 History Api). Examples --> [here](http://game-portfolio.herokuapp.com/games/2) [here](http://game-portfolio.herokuapp.com/games/3)
+* Deployed minified assets for improve performance
 
 ## Technologies
 

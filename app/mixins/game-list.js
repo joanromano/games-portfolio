@@ -1,5 +1,10 @@
 import Ember from "ember";
 
+/**
+ * TODO: Document
+ * @param  {[type]} ) {               var direcction [description]
+ * @return {[type]}   [description]
+ */
 export default Ember.Mixin.create({
   needs: ['games'],
   filterText: '',
