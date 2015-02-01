@@ -1,9 +1,10 @@
 //Slide
-.slideThree {
+.slide-input {
   $activeColor: #27ae60; //green
   $darkenColor: darken($activeColor, 20%);
   $background: #3498db;
 
+  margin-left: 0.5rem;
   display: inline-block;
   width: px-to-rem(80px);
   height: px-to-rem(26px);
@@ -27,6 +28,13 @@
     content: 'ON';
     color: $activeColor;
     left: 10px;
+  }
+  .description{
+    position: absolute;
+    top: -1rem;
+    white-space: nowrap;
+    font-size: 10px;
+    left: 0.4rem;
   }
   label {
     @include linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);

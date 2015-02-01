@@ -1,0 +1,11 @@
+<header id="app-header">
+  {{#link-to "all" tagName="h1"}}Games Portfolio{{/link-to}}
+  <nav>
+    {{#link-to "all"}}
+      <i class="fa fa-list"></i> All ({{allGames.length}})
+    {{/link-to}}
+    {{#link-to "favorites"}}
+      <i class="fa fa-star"></i> Favorites ({{favoriteGames.length}})
+    {{/link-to}}
+  </nav>
+</header>

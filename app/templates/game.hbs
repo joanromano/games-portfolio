@@ -8,7 +8,11 @@
 </h2>
 <button class="button light" {{action "historyBack"}}><i class="fa fa-chevron-left"></i> Back</button>
 {{#if isFavorite}}
-  <button class="toggle-fav button light" {{action "toggleFavorite"}}>Remove from favorites</button>
+  <button class="toggle-fav button light" {{action "toggleFavorite"}}>
+    Remove from favorites <i class="fa fa-star"></i>
+  </button>
 {{else}}
-  <button class="toggle-fav button light" {{action "toggleFavorite"}}>Add to favorites</button>
+  <button class="toggle-fav button light" {{action "toggleFavorite"}}>
+    Add to favorites <i class="fa fa-star-o"></i>
+  </button>
 {{/if}}

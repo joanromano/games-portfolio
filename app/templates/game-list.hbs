@@ -3,12 +3,12 @@
     <span class="icon"><i class="fa fa-search"></i></span>
     {{input value=filterText type="search" id="search" placeholder="Search..."}}
   </div>
-  <div class="filter slideThree">
-    {{input type="checkbox" id="slideThree" checked=isSortAscending}}
-    <label for="slideThree"></label>
+  <div class="filter slide-input">
+    <div class="description">Sort ascending</div>
+    {{input type="checkbox" id="slide-input" checked=isSortAscending}}
+    <label for="slide-input"></label>
   </div>
 </div>
-
 <div class="all-games">
   {{#each game in sortedGames}}
     {{game-card content=game}}
