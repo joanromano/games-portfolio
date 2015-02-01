@@ -2,9 +2,7 @@
   <img {{bind-attr src=image alt=name}}>
 </div>
 <h2>
-  <span>
-    {{name}}
-  </span>
+  <span>{{name}}</span>
 </h2>
 <button class="button light" {{action "historyBack"}}><i class="fa fa-chevron-left"></i> Back</button>
 {{#if isFavorite}}
