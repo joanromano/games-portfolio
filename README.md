@@ -1,9 +1,36 @@
 # Games-portfolio
+The App can run in local (open directly the **index.html** into the browser) and [remote](http://game-portfolio.herokuapp.com); in which you will have a better user experience.
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Visit the last stable version [http://game-portfolio.herokuapp.com](http://game-portfolio.herokuapp.com)
 
-## Prerequisites
+## Features
+
+* Responsive
+* MVC pattern
+* Highlight search results
+* Support IE8+
+* Fully mobile support
+* 100% Custom design
+* Web components
+* Pure CSS animations and transitions
+* State of the App it’s preserved between view changes
+* Deployed to a production enviroment --> [http://game-portfolio.herokuapp.com](http://game-portfolio.herokuapp.com)
+* Singleton routes (HTML5 History Api). Examples --> [here](http://game-portfolio.herokuapp.com/games/2) [here](http://game-portfolio.herokuapp.com/games/3)
+
+## Technologies
+
+* Ember.js
+* Ember Data
+* Ember cli
+* Handlebars
+* Bower
+* Npm
+* SASS
+* Bourbon
+* Font Awesome
+* Normalize.css
+
+## Prerequisites for run in local
 
 You will need the following things properly installed on your computer.
 
@@ -12,8 +39,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone https://github.com/zzarcon/games-portfolio.git`
+* `cd games-portfolio`
 * `npm install`
 * `bower install`
 
@@ -21,30 +48,3 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
