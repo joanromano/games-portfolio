@@ -25,7 +25,18 @@ body {
   z-index: 9;
 
   h1{
+    @include transition(all 0.5s);
     float: left;
+    font-size: 32px;
+    color: $header-color;
+    text-shadow: 1px 2px 1px white;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+    &:hover{
+      text-shadow: 1px 6px 8px #ccc;
+      color: #777;
+    }
   }
   nav{
     padding-top: 2rem;
