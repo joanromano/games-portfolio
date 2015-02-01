@@ -3,6 +3,6 @@
   <div class="game-img" style="background-image: url({{unbound content.icons.large}});"></div>
 {{/link-to}}
 <div class="game-title">
-  {{{content.displayedName}}}
+  <span class="displayed-name">{{{content.displayedName}}}</span>
   <i {{bind-attr class=":favorite-icon :fa content.isFavorite:fa-star:fa-star-o"}} {{action "toggleFavorite"}}></i>
 </div>

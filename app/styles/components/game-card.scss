@@ -47,6 +47,14 @@
     color: $app-bg;
     margin: 0.4rem;
     font-weight: bold;
+
+    .displayed-name{
+      max-width: 8.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+      overflow: hidden;
+    }
   }
 
   .matched-text{
