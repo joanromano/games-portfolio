@@ -88,7 +88,8 @@
       padding: 0.4rem;
 
       .main-loader{
-        display: none;
+        top: 1.3rem;
+        left: 3rem;
       }
       a{
         float: left;
@@ -98,6 +99,7 @@
         background-position: top;
         border-radius: $main-border-radius;
         height: 3.2rem;
+        border: 1px solid #ccc;
       }
       .game-title{
         float: left;

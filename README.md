@@ -23,6 +23,7 @@ Visit the last stable version [http://game-portfolio.herokuapp.com](http://game-
 * Ember.js
 * Ember Data
 * Ember cli
+* ES6
 * Handlebars
 * Bower
 * Npm
