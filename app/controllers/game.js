@@ -1,11 +1,7 @@
 import Ember from "ember";
 
 /**
- * TODO: Document
- * @param  {[type]} )                {                 return this.get('isFavorite') ?          this.get('favorites.filterText') : this.get('all.filterText');  }.property('favorites.filterText', 'all.filterText') [description]
- * @param  {[type]} matchTextFilter: function()    {          var                    filterText [description]
- * @param  {[type]} displayedName:   function()    {          var                    filterText [description]
- * @return {[type]}                  [description]
+ * Used as itemController by GamesController, they adds extra properties and functionality to the Game model.
  */
 export default Ember.ObjectController.extend({
   needs: ['all', 'favorites'],

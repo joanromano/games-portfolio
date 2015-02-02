@@ -15,6 +15,9 @@ function injectFixtures(store) {
   store.pushPayload('game', {games: Games});
 }
 
+/**
+ * It's the first route called of the App
+ */
 export default Ember.Route.extend({
   //Load dependencies before the app starts
   beforeModel: function() {

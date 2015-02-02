@@ -5,9 +5,7 @@ function randomNum(min, max) {
 }
 
 /**
- * TODO: Document
- * @param  {[type]} ) {               return 'bg-' + randomNum(1, this.get('availableBackgrounds'));  }.property('availableBackgrounds')} [description]
- * @return {[type]}   [description]
+ * View associated to "/game/:id" route
  */
 export default Ember.View.extend({
   elementId: "game",

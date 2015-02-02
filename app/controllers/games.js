@@ -1,10 +1,7 @@
 import Ember from "ember";
 
 /**
- * TODO: Document
- * @param  {[type]} )        {               return          this.get('store').all('game');    }.property() [description]
- * @param  {[type]} actions: {               toggleFavorite: function(game)                 {                                game.toggleProperty('isFavorite');    }  }} [description]
- * @return {[type]}          [description]
+ * Manages games, they offer a collection for favorite and non favorite games
  */
 export default Ember.ArrayController.extend({
   itemController: 'game',

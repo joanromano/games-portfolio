@@ -1,9 +1,7 @@
 import Ember from "ember";
 
 /**
- * TODO: Document
- * @param  {[type]} ) {               var direcction [description]
- * @return {[type]}   [description]
+ * Implements common behavior for the gameController; it's used by AllController and FavoritesController
  */
 export default Ember.Mixin.create({
   needs: ['games'],

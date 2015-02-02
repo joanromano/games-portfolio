@@ -2,8 +2,7 @@ import Ember from "ember";
 import gameList from "../mixins/game-list";
 
 /**
- * TODO: Document
- * @type {[type]}
+ * Manages the favorite games
  */
 export default Ember.ObjectController.extend(gameList, {
   model: Ember.computed.alias('controllers.games.favorites')

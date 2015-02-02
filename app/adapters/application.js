@@ -1,9 +1,7 @@
 import DS from "ember-data";
 
 /**
- * TODO: Document
- * @param  {[type]} type) {               return type.pluralize() + '.json';  }} [description]
- * @return {[type]}       [description]
+ * The adapter it's used to communicate to a backend server api (or fixture data)
  */
 export default DS.RESTAdapter.extend({
   buildURL: function(type) {

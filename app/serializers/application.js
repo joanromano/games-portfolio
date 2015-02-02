@@ -1,11 +1,7 @@
 import DS from "ember-data";
 
 /**
- * TODO: Document
- * @param  {[type]} store    [description]
- * @param  {[type]} type     [description]
- * @param  {[type]} payload) {               var id [description]
- * @return {[type]}          [description]
+ * It's used to serialize and deserialize records when they are transferred in and out of an external source
  */
 export default DS.RESTSerializer.extend({
   extract: function(store, type, payload) {

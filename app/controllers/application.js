@@ -1,9 +1,5 @@
 import Ember from "ember";
 
-/**
- * TODO: Document
- * @type {Array}
- */
 export default Ember.ObjectController.extend({
   needs: ['all', 'favorites'],
 
