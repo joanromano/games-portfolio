@@ -1,4 +1,4 @@
-# Games-portfolio
+# Games-portfolio [![Build Status](https://travis-ci.org/zzarcon/games-portfolio.svg?branch=master)](https://travis-ci.org/zzarcon/games-portfolio)
 The App can run in local (open directly the **index.html** into the browser) and [remote](http://game-portfolio.herokuapp.com); in which you will have a better user experience.
 
 Visit the last stable version [http://game-portfolio.herokuapp.com](http://game-portfolio.herokuapp.com)
