@@ -27,7 +27,8 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     ENV.baseURL = '/';
-    ENV.locationType = 'hash';
+    ENV.locationType = 'none';
+    ENV.APP.rootElement = '#ember-testing';
   }
 
   if (environment === 'local') {

@@ -5,6 +5,7 @@ Visit the last stable version [http://game-portfolio.herokuapp.com](http://game-
 
 ## Features
 
+* Testsuite integrated with Travis ci
 * Responsive
 * MVC pattern
 * Highlight search results
